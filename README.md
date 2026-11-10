@@ -1,6 +1,6 @@
 # brief-to-architecture
 
-A Claude skill that turns a raw brief into an architect-grade analysis that finds the requirements that actually decide the system's shape, makes them testable, and catches the contradictions before anyone commits to an estimate.
+A Claude skill that analyses a raw brief the way an architect does before estimating. It finds the requirements that shape the system, makes them testable and catches contradictions before anyone commits to an estimate.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Claude skill](https://img.shields.io/badge/Claude-skill-8A5CF6.svg)](https://docs.claude.com/en/docs/claude-code/skills)
@@ -13,15 +13,15 @@ Hand Claude a brief, an RFP, discovery-call notes, or a feature spec, and this s
 2. **Classify** them into functional, quality-attribute, and constraint, using the ISO/IEC 25010 quality model so nothing is missed.
 3. **Sharpen** each into something unambiguous and testable, with its architectural implication.
 4. **Prioritise** by business value and architectural impact, so you design hard for the few that matter.
-5. **Check feasibility** — catch requirements that quietly contradict each other, including the arithmetic impossibilities.
+5. **Check feasibility**: catch requirements that quietly contradict each other, including the arithmetic impossibilities.
 6. **Specify** measurable quality scenarios and the design strategies (with their costs) that would meet them.
 
-The output is an analysis you can defend, which is what makes the estimate on top of it defensible.
+You can defend the analysis, so you can defend the estimate built on it.
 
 ## What it's built on
 
-- **ISO/IEC 25010** — the international standard product-quality model, used to classify and cover quality attributes completely.
-- **Scenario-based quality specification** — turning adjectives ("fast", "reliable") into measurable scenarios.
+- **ISO/IEC 25010**: the international product-quality model, used to classify quality attributes and cover all of them.
+- **Scenario-based quality specification**: turns adjectives ("fast", "reliable") into measurable scenarios.
 - A practical catalogue of **brief smells**, a **feasibility-check** method (including the availability "nines" budget and arithmetic contradiction checks), and a map of **design strategies with their costs**.
 
 This is an original work. The architecturally-significant-requirements concept and the scenario/tactics ideas it builds on are credited under [Further reading](#further-reading); no copyrighted templates, taxonomies, or text are reproduced here.
@@ -57,7 +57,7 @@ Claude Code discovers skills under `~/.claude/skills/`. The skill activates when
 
 Ask naturally, for example:
 
-- "Analyse this brief — what's architecturally significant and what could go wrong?"
+- "Analyse this brief. What's architecturally significant and what could go wrong?"
 - "Is this set of requirements even feasible together?"
 - "Turn these quality goals into testable scenarios and prioritise them."
 - "What should I ask the client before I estimate this?"
@@ -66,7 +66,7 @@ Ask naturally, for example:
 
 - ISO/IEC 25010, *Systems and software engineering — SQuaRE — Product quality model.*
 - Chen, Ali Babar & Nuseibeh, "Characterizing Architecturally Significant Requirements," *IEEE Software* 30(2), 2013.
-- Bass, Clements & Kazman, *Software Architecture in Practice* (4th ed., Addison-Wesley) — the thorough reference for quality-attribute scenarios, utility trees, and the architectural-tactics catalogue.
+- Bass, Clements & Kazman, *Software Architecture in Practice* (4th ed., Addison-Wesley), the reference for quality-attribute scenarios, utility trees and the architectural-tactics catalogue.
 
 ## License
 
