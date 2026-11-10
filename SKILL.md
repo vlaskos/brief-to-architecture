@@ -1,5 +1,5 @@
 ---
-name: asr-analysis
+name: brief-to-architecture
 description: Turn a raw brief, RFP, discovery transcript, or feature spec into an architect-grade analysis — the architecturally significant requirements pulled out and split into functional / quality-attribute / constraint, each sharpened into something testable, prioritised by business value and architectural impact, checked for requirements that quietly contradict each other, and turned into measurable quality scenarios with the design strategies that would satisfy them. Use whenever a brief, pre-sales input, RFP, discovery-call notes, kickoff document, or set of requirements needs to be assessed before estimation or design — and whenever someone asks what is architecturally significant here, what could go wrong with these requirements, whether this is even buildable, what to ask the client, or how to architect it. Grounded in the ISO/IEC 25010 quality model.
 license: MIT
 ---

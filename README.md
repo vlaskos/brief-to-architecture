@@ -1,4 +1,4 @@
-# asr-analysis
+# brief-to-architecture
 
 A Claude skill that turns a raw brief into an architect-grade analysis that finds the requirements that actually decide the system's shape, makes them testable, and catches the contradictions before anyone commits to an estimate.
 
@@ -45,8 +45,8 @@ references/
 **Claude Code (CLI):**
 
 ```bash
-git clone https://github.com/vlaskos/asr-analysis.git \
-  ~/.claude/skills/asr-analysis
+git clone https://github.com/vlaskos/brief-to-architecture.git \
+  ~/.claude/skills/brief-to-architecture
 ```
 
 Claude Code discovers skills under `~/.claude/skills/`. The skill activates when you ask it to analyse a brief, find what's architecturally significant, or assess requirements before estimating.
